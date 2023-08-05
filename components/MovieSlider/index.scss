@@ -1,0 +1,38 @@
+/*------------------------------------------------
+    Movie Slider
+-------------------------------------------------*/
+
+.movie-slider {
+    &__image {
+        height: 133px;
+        border-radius: 12px;
+        overflow: hidden;
+        width: 100%;
+
+        img{
+            height: auto;
+            min-height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__item{
+        padding: 0 7.5px;
+    }
+
+    .swiper-button::after{
+        color: #9A83DB !important;
+        font-size: 35px !important;
+        top: 53% !important;
+    }
+
+    .swiper-button-next,
+    .swiper-container-rtl .swiper-button-prev{
+        right: -15px !important;
+    }
+
+    .swiper-button-prev,
+    .swiper-container-rtl .swiper-button-next{
+        left: -15px !important;
+    }
+}
